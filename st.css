@@ -1,0 +1,113 @@
+
+div {
+    border: 1px solid #797474;
+    text-align: justify;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f5eef4;
+    padding: 20px;
+}
+.container {
+    position: relative;
+}
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    height: auto;  
+}
+
+h1 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4f0858;
+}
+
+p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: #008CBA;
+}
+
+input[type=text] , textarea {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ select{
+    width: 12%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 10%;
+    background-color: #47b14b;
+    color: white;
+    padding: 8px 20px;
+    margin: 7px 20px;
+    border: right;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #4faf4f;
+}
+ 		/* Table Style! */
+		/* Put borders around the cells */
+		th, td { border: solid 1px black; }
+		/* Collapse or 'merge' the borders into each other*/
+		table { border-collapse: collapse; }
+
+		/* Color every other row (tr) light grey */
+		
+
+		/* Color green the text of currentlytaking rows */
+		tr.currentlytaking {
+			color:green;
+		}
+
+		/* Align and style the "For Credit" and "Listener" cells 	*/
+		td.enrollheader {
+			background-color:white;
+			text-align:center;
+			font-weight:bold;
+		}
+
+

@@ -1,0 +1,174 @@
+
+<html>
+<head>
+	<!-- The title shows up in the browser toolbar "+checkedV.value+  myWindow.document.write("<head> <link href=st.css rel=stylesheet type=text/css/> </head>");<link href="styledate.css" rel="stylesheet" type="text/css"/> -->
+	<title>Publish New Event</title>
+    
+	<link href="st.css" rel="stylesheet" type="text/css"/>
+    
+    
+    <a href="file:///C:/Users/tarfh/Desktop/index.html">Homepage | </a>
+    <a href="myCourses.html">My courses</a>
+   
+    
+</head>
+    <script src="file1.js"></script>
+    <script> 
+    
+function myFunction() {
+    var eventN = document.getElementById("ename").value;
+     var des = document.getElementById("ar1").val;
+    var time=document.getElementById("time").value;
+    
+     var d = document.getElementById("day1");
+     var day = d.options[d.selectedIndex].text;
+     var m = document.getElementById("month1");
+     var month = m.options[m.selectedIndex].text;
+     var y = document.getElementById("year1");
+     var year = y.options[y.selectedIndex].text;
+    
+    var rb;
+   if (document.getElementById('m').checked) {
+  rb = document.getElementById('m').value; }
+    else if(document.getElementById('f').checked){
+  rb = document.getElementById('f').value; }
+
+   var checkedValue= document.querySelector('.messageCheckbox:checked').value;
+    
+    if (typeof(Storage) !== "undefined") {
+    localStorage.setItem("eName", eventN);
+    localStorage.setItem("desc", des);
+    localStorage.setItem("time", time);
+    localStorage.setItem("dd", day);
+    localStorage.setItem("mm", month);
+    localStorage.setItem("yy", year);
+    localStorage.setItem("gen", rb);
+    localStorage.setItem("cb", checkedValue);
+    }
+    else { document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";}
+    
+    
+    
+    var myWindow =window.open("","_self");
+    myWindow.document.write("<div><h2>your event has been published ! </h2><br><h3>the event name :</h3> "+eventN+"<br><h3> the date:</h3>"+day+" "+month+" "+year+"<br> <h3>the event description :</h3>"+ar1.value+"<br>"+"<h3>the time :</h3>"+time+" "+checkedValue+"<h3>the gender :</h3>"+rb+"</div><br>"+"<br><a href=file:///C:/Users/tarfh/Desktop/index.html>return to the homepage</a>");
+    myWindow.document.write(""<link href="st.css" rel="stylesheet" type="text/css"/>""); 
+    myWindow.document.write("<br><a href=file:///C:/Users/tarfh/Desktop/index.html>return to the homepage</a>"); 
+   
+    
+    
+   
+    
+}
+    </script>
+  
+    
+
+<body>
+    <div>
+    <h1>Publish New Event</h1>
+        
+    </div>
+	<!--A header for the page-->
+	<br>
+    <div>
+    <form id="frm1" action="/action_page.php">
+       <p> <br> the event name : <br><input type="text" id="ename" name="ename"><br> </p>
+   </form> 
+    
+   <p> <br>the date : <br>
+    
+    <select id="day1" name="day"> 
+  <option value="d1">1</option>
+  <option value="d2">2</option>
+  <option value="d3">3</option>
+  <option value="d4">4</option>
+  <option value="d5">5</option>
+  <option value="d6">6</option>
+  <option value="d7">7</option>
+  <option value="d8">8</option>
+  <option value="d9">9</option>
+   <option value="d10">10</option>      
+    <option value="d11">11</option>      
+    <option value="d12">12</option>      
+    <option value="d13">13</option>      
+    <option value="d14">14</option>      
+    <option value="d15">15</option>      
+    <option value="d16">16</option>      
+    <option value="d17">17</option>      
+    <option value="d18">18</option>      
+    <option value="d19">19</option>      
+    <option value="d20">20</option>      
+    <option value="d21">21</option>      
+    <option value="d22">22</option>      
+    <option value="d23">23</option>      
+    <option value="d24">24</option>      
+    <option value="d25">25</option>      
+    <option value="d26">26</option>      
+    <option value="d27">27</option>      
+    <option value="d28">28</option>      
+    <option value="d29">29</option>      
+    <option value="d30">30</option>      
+    <option value="d31">31</option> 
+   </select>
+    
+        <select id="month1" name="month"> 
+  <option value="m1">January</option>
+  <option value="m2">February</option>
+  <option value="m3">March</option>
+  <option value="m4">April</option>
+  <option value="m5">May</option>
+  <option value="m6">June</option>
+  <option value="m7">July</option>
+  <option value="m8">August</option>
+  <option value="m9">September</option>
+    <option value="m10">October</option>
+    <option value="m11">November</option>
+    <option value="m12">December</option>
+   </select>
+    
+        <select id="year1" name="year"> 
+  <option value="y0">2018</option>
+  <option value="y1">2019</option>
+  <option value="y2">2020</option>
+  <option value="y3">2021</option>
+  <option value="y4">2022</option>
+  <option value="y5">2023</option>
+  <option value="y6">2024</option>
+
+   </select>
+       <br>
+       
+     <br> <br id="ar"> 
+    the event description : <br>
+   <textarea rows="4" cols="50" id="ar1" name="area1"> 
+   </textarea> </p> 
+    <br>
+        
+   <p> <br id="gen"> the gender : 
+    <form >
+        <p> <input type="radio" id="m" name="gender" value="male"> Male<br> </p>
+        <p> <input type="radio" id="f" name="gender" value="female"> Female<br> </p>
+        </form>   </p>
+    
+    <form id="frm1" action="/action_page.php">
+       <p> <br> the time : <br><input type="text" id="time" name="time"><br> </p>
+   </form> 
+<p> 
+    <form action="/action_page.php">
+ <p> <input class="messageCheckbox" type="checkbox" id="cb1" name="vehicle" value="Morning"> Morning  </p>
+ <p> <input class="messageCheckbox" type="checkbox" id="cb2" name="vehicle" value="Evening" > Evening<br> </p>
+ <!-- <input type="submit" value="Submit"> -->
+       
+<!--    </form>-->
+    
+   <p> <input type="submit" name="button" id="button1" onclick="myFunction()" value="submit" />  </p>      
+      </form> </form>
+    
+    </p>
+        </div>
+    </body>
+    
+</html>
+
+
+

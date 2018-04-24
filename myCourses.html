@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<!-- The title shows up in the browser toolbar -->
+	<title>tarfah's Homepage</title>
+    <link href="st.css" rel="stylesheet" type="text/css"/>
+    
+    <a href="index.html">Homepage | </a>
+    <a href="projectpage#4.html">publish an event</a>
+   
+</head>
+    
+
+<body>
+    <h1>my courses</h1>
+    
+    <div class="section" id="courses">
+		<p>
+        <h3>Here are some courses I've taken:</h3>
+		 </p>
+
+		<!--Tables can be used to group text or images into rows and columns-->
+		<table>
+			<!--Each <tr> is a row-->
+			<tr>
+				<!--Each <th> or <td> is a cell.
+					The number of cells in a row determines the number of columns in the table.
+				-->
+				<th>Course Number</th>
+				<th>Course Title</th>
+				<th>Semester Taken</th>
+			</tr>
+			<tr>
+				<!--A <td> or cell can span multiple columns using the colspan attribute-->
+				<td class="enrollheader" colspan=3>For Credit</td>
+			</tr>
+			<!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
+			<tr class="currentlytaking">
+			<!--here!-->			
+			<tr>
+				<td><a href="https://en.wikipedia.org/wiki/Artificial_intelligence">CSC361</a></td>
+				<td>Artificial Intelligence</td>
+				<td>spring 2018</td>
+			</tr>
+			<tr>
+                <td><a href="https://en.wikipedia.org/wiki/Operating_system">CSC227</a></td>
+				<td>Operating system</td>
+				<td>spring 2018</td>
+			</tr>
+			<tr>
+				<td><a href="projectpage#4.html">CSC440</a></td>
+				<td>HCI</td>
+				<td>spring 2018</td>
+			</tr>
+			
+		</table>
+	</div>
+
+	<div class="section" id="interests">
+		<h3>Interests : </h3>
+		<!--Spans are displayed inline, but allow you to identify text in CSS rules-->
+		I am interested in <span class="serious">HCI</span>, <span class="silly">games</span>, and <span class="silly">youtube videos</span>.
+	</div>
+    
+   
+
+</body>
+</html>
